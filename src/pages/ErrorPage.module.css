@@ -1,0 +1,14 @@
+.errorPage {
+  border-bottom: 1px solid #ccc;
+  min-height: 100px;
+  padding: 20px 20px 40px 20px;
+}
+
+.message {
+  margin: 20px 0 20px;
+  color: #393934;
+}
+
+.subText {
+  padding: 10px 0 10px 0;
+}
