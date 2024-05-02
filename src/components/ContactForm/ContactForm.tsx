@@ -19,7 +19,7 @@ export const ContactForm = () => {
 
   const [submitStatus, setSubmitStatus] = useState<null | string>(null);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     // Validation
@@ -35,7 +35,9 @@ export const ContactForm = () => {
     setSubmitStatus("success");
   };
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };

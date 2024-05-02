@@ -2,16 +2,9 @@ import { NavLink } from "react-router-dom";
 
 import styles from "./Navigation.module.css";
 
-import meImage from "../../assets/me.jpg";
 import { Home } from "../CustomIcons";
 import { Icon, Image } from "@chakra-ui/react";
 import { getImageUrl } from "../../utils";
-
-const spinningMe = {
-  background: `url(${meImage}) 0 0`,
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "50px 50px",
-};
 
 export const Navigation = () => {
   const openLogin = () => {

@@ -1,4 +1,4 @@
-import { Flex, Link } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 
 import { DisplayItem } from "../../components/DisplayItem";
 import { LogoSize } from "../../components/DisplayItem";
