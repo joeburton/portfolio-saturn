@@ -49,7 +49,14 @@ export const FormikContactForm = () => {
 
           const data = await axios.post(
             `${import.meta.env.VITE_PORTFOLIO_API}/enquiry`,
-            values
+            values,
+            {
+              headers: {
+                "Access-Control-Allow-Origin": "*",
+                "Content-Type": "application/json",
+                "my-custom-header": "eat-ants",
+              },
+            }
           );
 
           actions.setSubmitting(false);
