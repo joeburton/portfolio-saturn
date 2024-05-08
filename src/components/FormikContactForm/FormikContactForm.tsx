@@ -34,19 +34,6 @@ export const FormikContactForm = () => {
           actions.setSubmitting(true);
           await new Promise((r) => setTimeout(r, 2000));
 
-          // const response = await fetch(
-          //   `${import.meta.env.VITE_PORTFOLIO_API}/enquiry`,
-          //   {
-          //     method: "POST",
-          //     headers: {
-          //       "Content-Type": "application/json",
-          //     },
-          //     body: JSON.stringify(values),
-          //     credentials: "include",
-          //   }
-          // );
-          // const data = await response.json();
-
           const data = await axios.post(
             `${import.meta.env.VITE_PORTFOLIO_API}/enquiry`,
             values,
@@ -54,7 +41,6 @@ export const FormikContactForm = () => {
               headers: {
                 "Access-Control-Allow-Origin": "*",
                 "Content-Type": "application/json",
-                "my-custom-header": "eat-ants",
               },
             }
           );
