@@ -32,13 +32,16 @@ export const FormikContactForm = () => {
           actions.setSubmitting(true);
           await new Promise((r) => setTimeout(r, 2000));
 
-          const response = await fetch("http://localhost:8080/sendmail", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(values),
-          });
+          const response = await fetch(
+            `${import.meta.env.VITE_PORTFOLIO_API}/sendmail`,
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(values),
+            }
+          );
           const data = await response.json();
 
           actions.setSubmitting(false);

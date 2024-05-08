@@ -37,7 +37,7 @@ export default function Contact() {
                     <Image
                       src={getImageUrl(
                         "/assets/",
-                        "pigeons-ai/resized/carrier-pigeon-ai-10.png"
+                        "pigeons-ai/carrier-pigeon-ai-10.png"
                       )}
                       alt='Cliché image of a carrier pigeon. This image was generated using AI 🤓 how ironic.'
                     />
@@ -50,10 +50,7 @@ export default function Contact() {
                     {randomItems instanceof Array &&
                       randomItems.map((item: string) => (
                         <Image
-                          src={getImageUrl(
-                            "/assets/",
-                            `pigeons-ai/resized/${item}`
-                          )}
+                          src={getImageUrl("/assets/", `pigeons-ai/${item}`)}
                           alt='Cliché image of a carrier pigeon. This image was generated using AI 🤓 how ironic.'
                           key={item}
                         />

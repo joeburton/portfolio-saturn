@@ -20,8 +20,8 @@ export default function Thankyou() {
                   <Show>
                     <Image
                       src={getImageUrl(
-                        "../assets/",
-                        "pigeons-ai/resized/carrier-pigeon-ai-10.png"
+                        "/assets/",
+                        "pigeons-ai/carrier-pigeon-ai-10.png"
                       )}
                       alt='Cliché image of a carrier pigeon. This image was generated using AI 🤓 how ironic.'
                     />

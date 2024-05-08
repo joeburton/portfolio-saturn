@@ -8,7 +8,7 @@ export const ImageGrid = () => {
       {pigeons.map((pigeon: string) => (
         <Box height='auto' key={generateUniqueId()}>
           <Image
-            src={getImageUrl("../assets/pigeons-ai/resized/", pigeon)}
+            src={getImageUrl("../assets/pigeons-ai/", pigeon)}
             alt='Cliché image of a carrier pigeon. This image was generated using AI 🤓 how ironic.'
           />
         </Box>

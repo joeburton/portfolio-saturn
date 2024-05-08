@@ -51,7 +51,7 @@ export default function Contact() {
                     <Image
                       src={getImageUrl(
                         "/assets/",
-                        "ginger-software-engineer-ai/resized/ginger-software-engineer-ai-7.png"
+                        "ginger-software-engineer-ai/ginger-software-engineer-ai-7.png"
                       )}
                       alt='Ginger Software Engineer'
                     />
@@ -66,7 +66,7 @@ export default function Contact() {
                         <Image
                           src={getImageUrl(
                             "/assets/",
-                            `ginger-software-engineer-ai/resized/${item}`
+                            `ginger-software-engineer-ai/${item}`
                           )}
                           alt='Cliché image of a carrier pigeon. This image was generated using AI 🤓 how ironic.'
                           key={item}
