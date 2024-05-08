@@ -33,7 +33,7 @@ export const FormikContactForm = () => {
           await new Promise((r) => setTimeout(r, 2000));
 
           const response = await fetch(
-            `${import.meta.env.VITE_PORTFOLIO_API}/sendmail`,
+            `${import.meta.env.VITE_PORTFOLIO_API}/enquiry`,
             {
               method: "POST",
               headers: {
