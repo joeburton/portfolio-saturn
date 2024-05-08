@@ -50,7 +50,7 @@ export default function Contact() {
                   <Show above='lg'>
                     <Image
                       src={getImageUrl(
-                        "../assets/",
+                        "/assets/",
                         "ginger-software-engineer-ai/resized/ginger-software-engineer-ai-7.png"
                       )}
                       alt='Ginger Software Engineer'
@@ -65,7 +65,7 @@ export default function Contact() {
                       randomItems.map((item: string) => (
                         <Image
                           src={getImageUrl(
-                            "../assets/",
+                            "/assets/",
                             `ginger-software-engineer-ai/resized/${item}`
                           )}
                           alt='Cliché image of a carrier pigeon. This image was generated using AI 🤓 how ironic.'

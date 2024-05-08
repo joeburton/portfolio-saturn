@@ -1,7 +1,7 @@
 import { Text } from "@chakra-ui/react";
 
 import styles from "./PageIntro.module.css";
-import ruleImage from "../../assets/line.png";
+import ruleImage from "/assets/line.png";
 
 const rule = {
   background: `url(${ruleImage}) repeat-x`,

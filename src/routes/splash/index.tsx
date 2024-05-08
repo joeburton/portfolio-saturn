@@ -92,35 +92,32 @@ export default function Splash() {
                   alignItems='center'
                 >
                   <Image
-                    src={getImageUrl("../assets/logos/", "publicissapient.png")}
+                    src={getImageUrl("/assets/logos/", "publicissapient.png")}
                     alt='Publicis Sapient'
                     maxWidth='70px'
                   />
                   <Image
-                    src={getImageUrl("../assets/logos/", "worldfirst.png")}
+                    src={getImageUrl("/assets/logos/", "worldfirst.png")}
                     alt='World First'
                     maxWidth='70px'
                   />
                   <Image
-                    src={getImageUrl("../assets/logos/", "ge.png")}
+                    src={getImageUrl("/assets/logos/", "ge.png")}
                     alt='General Electric'
                     maxWidth='70px'
                   />
                   <Image
-                    src={getImageUrl("../assets/logos/", "cashflows.png")}
+                    src={getImageUrl("/assets/logos/", "cashflows.png")}
                     alt='Cash Flows'
                     maxWidth='70px'
                   />
                   <Image
-                    src={getImageUrl(
-                      "../assets/logos/",
-                      "tribal-worldwide.jpeg"
-                    )}
+                    src={getImageUrl("/assets/logos/", "tribal-worldwide.jpeg")}
                     alt='Tribal Worldwide'
                     maxWidth='70px'
                   />
                   <Image
-                    src={getImageUrl("../assets/logos/", "helix.svg")}
+                    src={getImageUrl("/assets/logos/", "helix.svg")}
                     alt='Helix.'
                     maxWidth='70px'
                   />

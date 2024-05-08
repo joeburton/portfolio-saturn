@@ -1,4 +1,5 @@
 import { Card, CardBody, Box, SimpleGrid, Image, Show } from "@chakra-ui/react";
+import { ErrorBoundary } from "react-error-boundary";
 
 import { FormikContactForm } from "../../components/FormikContactForm";
 import { PageIntro } from "../../components/PageIntro";
@@ -8,6 +9,7 @@ import { useRandomArrayItems } from "../../hooks";
 import { pigeons } from "../../../mocks/pigeons";
 
 import styles from "./contact.module.css";
+import { ErrorBoundaryFallback } from "../../components/ErrorBoundaryFallback";
 
 export default function Contact() {
   const [randomItems] = useRandomArrayItems(pigeons, 3);
@@ -34,7 +36,7 @@ export default function Contact() {
                   <Show above='lg'>
                     <Image
                       src={getImageUrl(
-                        "../assets/",
+                        "/assets/",
                         "pigeons-ai/resized/carrier-pigeon-ai-10.png"
                       )}
                       alt='Cliché image of a carrier pigeon. This image was generated using AI 🤓 how ironic.'
@@ -49,7 +51,7 @@ export default function Contact() {
                       randomItems.map((item: string) => (
                         <Image
                           src={getImageUrl(
-                            "../assets/",
+                            "/assets/",
                             `pigeons-ai/resized/${item}`
                           )}
                           alt='Cliché image of a carrier pigeon. This image was generated using AI 🤓 how ironic.'
@@ -59,7 +61,9 @@ export default function Contact() {
                   </SimpleGrid>
                 </Box>
                 <Box>
-                  <FormikContactForm />
+                  <ErrorBoundary FallbackComponent={ErrorBoundaryFallback}>
+                    <FormikContactForm />
+                  </ErrorBoundary>
                 </Box>
               </SimpleGrid>
             </CardBody>

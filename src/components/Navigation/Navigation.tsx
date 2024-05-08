@@ -52,7 +52,7 @@ export const Navigation = () => {
         className={styles.logo}
         borderRadius='full'
         boxSize='50px'
-        src={getImageUrl("../assets/", `me.jpg`)}
+        src={getImageUrl("/assets/profile-images/", `me.jpg`)}
         alt='Joe Burton'
         onClick={openLogin}
       />
