@@ -9,6 +9,8 @@ import {
   Button,
 } from "@chakra-ui/react";
 
+import { useErrorBoundary } from "react-error-boundary";
+
 import { Formik, Form, Field, FieldProps } from "formik";
 
 import {
@@ -20,6 +22,7 @@ import {
 
 export const FormikContactForm = () => {
   const navigate = useNavigate();
+  const { showBoundary } = useErrorBoundary();
   return (
     <Formik
       initialValues={{ name: "", email: "", phoneNumber: "", message: "" }}
@@ -43,8 +46,8 @@ export const FormikContactForm = () => {
             console.log(data);
             navigate("/thankyou");
           }
-        } catch (e) {
-          console.log(e.message);
+        } catch (error) {
+          showBoundary(error);
           actions.setSubmitting(false);
         }
       }}
