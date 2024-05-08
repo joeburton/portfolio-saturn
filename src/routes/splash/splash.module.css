@@ -1,7 +1,3 @@
 .splashPage {
   padding: 20px;
 }
-
-img:hover {
-  filter: grayscale(0);
-}

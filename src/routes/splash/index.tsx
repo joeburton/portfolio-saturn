@@ -14,6 +14,8 @@ import {
   ListIcon,
   ListItem,
   Link,
+  Divider,
+  Show,
 } from "@chakra-ui/react";
 
 import { PageIntro } from "../../components/PageIntro";
@@ -93,25 +95,21 @@ export default function Splash() {
                     src={getImageUrl("../assets/logos/", "publicissapient.png")}
                     alt='Publicis Sapient'
                     maxWidth='70px'
-                    filter='grayscale(1);'
                   />
                   <Image
                     src={getImageUrl("../assets/logos/", "worldfirst.png")}
                     alt='World First'
                     maxWidth='70px'
-                    filter='grayscale(1);'
                   />
                   <Image
                     src={getImageUrl("../assets/logos/", "ge.png")}
                     alt='General Electric'
                     maxWidth='70px'
-                    filter='grayscale(1);'
                   />
                   <Image
                     src={getImageUrl("../assets/logos/", "cashflows.png")}
                     alt='Cash Flows'
                     maxWidth='70px'
-                    filter='grayscale(1);'
                   />
                   <Image
                     src={getImageUrl(
@@ -120,16 +118,21 @@ export default function Splash() {
                     )}
                     alt='Tribal Worldwide'
                     maxWidth='70px'
-                    filter='grayscale(1);'
                   />
                   <Image
                     src={getImageUrl("../assets/logos/", "helix.svg")}
                     alt='Helix.'
                     maxWidth='70px'
-                    filter='grayscale(1);'
                   />
                 </SimpleGrid>
                 <SimpleGrid columns={1}>
+                  <Show below='sm'>
+                    <Divider
+                      orientation='horizontal'
+                      m='10px 0 15px 0'
+                      color='silver'
+                    />
+                  </Show>
                   <List spacing={3} mb='10px'>
                     <ListItem>
                       <ListIcon as={LinkedIn} color='green.500' />
@@ -166,6 +169,7 @@ export default function Splash() {
                       <Link href='tel:+447768989321'>+ 44 (0) 7768989321</Link>
                     </ListItem>
                   </List>
+
                   <Flex alignItems='flex-end' mt='20px'>
                     <ChakraLink
                       as={ReactRouterLink}
