@@ -42,7 +42,7 @@ export const PageIntro = ({
       {detail && (
         <Text
           as='div'
-          fontSize='2xl'
+          fontSize='xl'
           fontWeight='slim'
           className={styles.introText}
           textAlign='center'

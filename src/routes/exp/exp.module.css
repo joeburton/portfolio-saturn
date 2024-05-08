@@ -11,3 +11,7 @@
   display: flex;
   align-items: center;
 }
+
+img:hover {
+  filter: grayscale(1);
+}

@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import {
   FormControl,
   FormLabel,
@@ -17,14 +19,34 @@ import {
 } from "./validation";
 
 export const FormikContactForm = () => {
+  const navigate = useNavigate();
   return (
     <Formik
       initialValues={{ name: "", email: "", phoneNumber: "", message: "" }}
-      onSubmit={(values, actions) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
+      onSubmit={async (values, actions) => {
+        console.log(actions);
+        try {
+          actions.setSubmitting(true);
+          await new Promise((r) => setTimeout(r, 2000));
+
+          const response = await fetch("http://localhost:8080/sendmail", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(values),
+          });
+          const data = await response.json();
+
           actions.setSubmitting(false);
-        }, 1000);
+          if (data) {
+            console.log(data);
+            navigate("/thankyou");
+          }
+        } catch (e) {
+          console.log(e.message);
+          actions.setSubmitting(false);
+        }
       }}
     >
       {(props) => (
@@ -43,6 +65,7 @@ export const FormikContactForm = () => {
                   placeholder='name'
                   id='name'
                   autoComplete='off'
+                  disabled={props.isSubmitting}
                 />
                 <FormErrorMessage position='absolute' m='4px 0 8px 0'>
                   {typeof form.errors?.name === "string"
@@ -66,6 +89,7 @@ export const FormikContactForm = () => {
                   id='email'
                   placeholder='email'
                   autoComplete='off'
+                  disabled={props.isSubmitting}
                 />
                 <FormErrorMessage position='absolute' m='4px 0 8px 0'>
                   {typeof form.errors?.email === "string"
@@ -96,6 +120,7 @@ export const FormikContactForm = () => {
                   placeholder='phone number'
                   autoComplete='off'
                   type='number'
+                  disabled={props.isSubmitting}
                 />
                 <FormErrorMessage position='absolute' m='4px 0 8px 0'>
                   {typeof form.errors?.phoneNumber === "string"
@@ -123,6 +148,7 @@ export const FormikContactForm = () => {
                   id='message'
                   placeholder='message'
                   minHeight='150px'
+                  disabled={props.isSubmitting}
                 />
                 <FormErrorMessage position='absolute' m='4px 0 8px 0'>
                   {typeof form.errors?.message === "string"

@@ -54,6 +54,7 @@ export default function Contact() {
                         "ginger-software-engineer-ai/resized/ginger-software-engineer-ai-7.png"
                       )}
                       alt='Ginger Software Engineer'
+                      filter='grayscale(1)'
                     />
                   </Show>
                   <SimpleGrid
@@ -70,6 +71,7 @@ export default function Contact() {
                           )}
                           alt='Cliché image of a carrier pigeon. This image was generated using AI 🤓 how ironic.'
                           key={item}
+                          filter='grayscale(1)'
                         />
                       ))}
                   </SimpleGrid>

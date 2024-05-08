@@ -9,6 +9,7 @@ import Work from "./routes/work";
 import Contact from "./routes/contact";
 import Exp from "./routes/exp";
 import Splash from "./routes/splash";
+import Thankyou from "./routes/thankyou";
 
 import ErrorPage from "./pages/error-page";
 
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "experiments",
         element: <Exp />,
+      },
+      {
+        path: "thankyou",
+        element: <Thankyou />,
       },
     ],
   },
