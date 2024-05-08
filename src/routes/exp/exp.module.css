@@ -7,6 +7,10 @@
   margin-bottom: 24px;
 }
 
+.customList li:last-child {
+  margin-bottom: 0;
+}
+
 .customList li p {
   display: flex;
   align-items: center;
