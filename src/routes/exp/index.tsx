@@ -99,7 +99,7 @@ export default function Contact() {
                     <li>
                       <Card variant='filled' p='3'>
                         <Text mb='2px'>
-                          Most of my pet projects that require hosting are on
+                          Most of my projects that require hosting are on
                           Vercel's free service.
                         </Text>
                         <Link
@@ -135,7 +135,7 @@ export default function Contact() {
                               height='20px'
                               mr='4px'
                             />
-                            www.linkedin.com/in/joejamesburton
+                            linkedin.com/in/joejamesburton
                           </Text>
                         </Link>
                       </Card>

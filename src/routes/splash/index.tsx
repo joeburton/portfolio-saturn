@@ -130,7 +130,7 @@ export default function Splash() {
                             height='20px'
                             mr='4px'
                           />
-                          www.linkedin.com/in/joejamesburton
+                          linkedin.com/in/joejamesburton
                         </Text>
                       </Link>
                     </Card>
