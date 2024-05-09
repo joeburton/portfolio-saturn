@@ -142,6 +142,11 @@ export default function Splash() {
                       orientation='horizontal'
                       m='10px 0 15px 0'
                       color='silver'
+                      sx={{
+                        "@media screen and (min-width: 768px)": {
+                          display: "none",
+                        },
+                      }}
                     />
                   </Show>
                   <List spacing={3} mb='10px'>
