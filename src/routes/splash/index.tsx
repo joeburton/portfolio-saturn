@@ -8,7 +8,6 @@ import {
   SimpleGrid,
   Text,
   Link as ChakraLink,
-  Image,
   Flex,
   List,
   ListIcon,
@@ -23,7 +22,6 @@ import styles from "./splash.module.css";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { HiMiniAtSymbol, HiMiniDevicePhoneMobile } from "react-icons/hi2";
 import { Vercel, LinkedIn, GitHubMark } from "../../components/CustomIcons";
-import { getImageUrl } from "../../utils";
 
 export default function Splash() {
   return (
