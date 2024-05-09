@@ -125,7 +125,7 @@ export default function Contact() {
                           take a look at my LinkedIn profile.
                         </Text>
                         <Link
-                          href='https://www.linkedin.com/in/joeburton1979'
+                          href='https://www.linkedin.com/in/joejamesburton'
                           isExternal
                         >
                           <Text>
@@ -135,7 +135,7 @@ export default function Contact() {
                               height='20px'
                               mr='4px'
                             />
-                            https://www.linkedin.com/in/joeburton1979
+                            https://www.linkedin.com/in/joejamesburton
                           </Text>
                         </Link>
                       </Card>

@@ -1,3 +1,19 @@
 .splashPage {
   padding: 20px;
 }
+
+.customList li {
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+.customList li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.customList li p {
+  display: flex;
+  align-items: center;
+  word-break: break-all;
+}

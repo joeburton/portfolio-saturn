@@ -84,46 +84,62 @@ export default function Splash() {
           </Card>
           <Card variant='elevated' mt='20px'>
             <CardBody>
-              <SimpleGrid columns={[1, 2, 2, 2]} spacing={5}>
-                <SimpleGrid
-                  columns={3}
-                  spacing={5}
-                  justifyContent='center'
-                  alignItems='center'
-                >
-                  <Image
-                    src={getImageUrl("/assets/logos/", "publicissapient.png")}
-                    alt='Publicis Sapient'
-                    maxWidth='70px'
-                  />
-                  <Image
-                    src={getImageUrl("/assets/logos/", "worldfirst.png")}
-                    alt='World First'
-                    maxWidth='70px'
-                  />
-                  <Image
-                    src={getImageUrl("/assets/logos/", "ge.png")}
-                    alt='General Electric'
-                    maxWidth='70px'
-                  />
-                  <Image
-                    src={getImageUrl("/assets/logos/", "cashflows.png")}
-                    alt='Cash Flows'
-                    maxWidth='70px'
-                  />
-                  <Image
-                    src={getImageUrl("/assets/logos/", "tribal-worldwide.jpeg")}
-                    alt='Tribal Worldwide'
-                    maxWidth='70px'
-                  />
-                  <Image
-                    src={getImageUrl("/assets/logos/", "helix.svg")}
-                    alt='Helix.'
-                    maxWidth='70px'
-                  />
-                </SimpleGrid>
+              <SimpleGrid columns={[1, 1, 2, 2]} spacing={5}>
+                <ul className={styles.customList}>
+                  <li>
+                    <Card variant='filled' p='1'>
+                      <Link href='https://github.com/joeburton' isExternal>
+                        <Text>
+                          <Icon
+                            as={GitHubMark}
+                            width='20px'
+                            height='20px'
+                            mr='4px'
+                          />
+                          https://github.com/joeburton
+                        </Text>
+                      </Link>
+                    </Card>
+                  </li>
+                  <li>
+                    <Card variant='filled' p='1'>
+                      <Link
+                        href='https://vercel.com/joe-burtons-projects'
+                        isExternal
+                      >
+                        <Text>
+                          <Icon
+                            as={Vercel}
+                            width='20px'
+                            height='20px'
+                            mr='4px'
+                          />
+                          https://vercel.com/joe-burtons-projects
+                        </Text>
+                      </Link>
+                    </Card>
+                  </li>
+                  <li>
+                    <Card variant='filled' p='1'>
+                      <Link
+                        href='https://www.linkedin.com/in/joejamesburton'
+                        isExternal
+                      >
+                        <Text>
+                          <Icon
+                            as={LinkedIn}
+                            width='20px'
+                            height='20px'
+                            mr='4px'
+                          />
+                          https://www.linkedin.com/in/joejamesburton
+                        </Text>
+                      </Link>
+                    </Card>
+                  </li>
+                </ul>
                 <SimpleGrid columns={1}>
-                  <Show below='sm'>
+                  <Show below='md'>
                     <Divider
                       orientation='horizontal'
                       m='10px 0 15px 0'
@@ -131,30 +147,6 @@ export default function Splash() {
                     />
                   </Show>
                   <List spacing={3} mb='10px'>
-                    <ListItem>
-                      <ListIcon as={LinkedIn} color='green.500' />
-                      <Link
-                        href='https://www.linkedin.com/in/joeburton1979'
-                        isExternal
-                      >
-                        LinkedIn
-                      </Link>
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={GitHubMark} />
-                      <Link href='https://github.com/joeburton' isExternal>
-                        GitHub
-                      </Link>
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={Vercel} />
-                      <Link
-                        href='https://vercel.com/joe-burtons-projects'
-                        isExternal
-                      >
-                        Vercel
-                      </Link>
-                    </ListItem>
                     <ListItem>
                       <ListIcon as={HiMiniAtSymbol} />
                       <Link href='mailto:joeburton@gmail.com'>
