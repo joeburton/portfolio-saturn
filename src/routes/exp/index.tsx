@@ -91,7 +91,7 @@ export default function Contact() {
                               height='20px'
                               mr='4px'
                             />
-                            https://github.com/joeburton
+                            github.com/joeburton
                           </Text>
                         </Link>
                       </Card>
@@ -113,7 +113,7 @@ export default function Contact() {
                               height='20px'
                               mr='4px'
                             />
-                            https://vercel.com/joe-burtons-projects
+                            vercel.com/joe-burtons-projects
                           </Text>
                         </Link>
                       </Card>
@@ -135,7 +135,7 @@ export default function Contact() {
                               height='20px'
                               mr='4px'
                             />
-                            https://www.linkedin.com/in/joejamesburton
+                            www.linkedin.com/in/joejamesburton
                           </Text>
                         </Link>
                       </Card>
