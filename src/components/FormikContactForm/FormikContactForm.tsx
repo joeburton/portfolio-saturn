@@ -35,7 +35,7 @@ export const FormikContactForm = () => {
           await new Promise((r) => setTimeout(r, 2000));
 
           const data = await axios.post(
-            `${import.meta.env.VITE_PORTFOLIO_API}/enquiry`,
+            `${import.meta.env.VITE_PORTFOLIO_API}/mailsender`,
             values,
             {
               headers: {
