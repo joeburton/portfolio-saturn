@@ -5,7 +5,7 @@ export const projects = [
     role: "Manager / Front-end Lead",
     company: "Publicis Sapient",
     description:
-      "<p>HSBC Digital API Estate Dashboard</p><p>For this project I lead a team of Front-end Engineers building a Digital Dashboard for HSBC to display meta data exploring their API Estate.</p><p>The Dashboard was for internal company use only to help stakeholders gain insights into their API estate. For example what regions of the world their API's are based, their data centre's, technologies used, software version’s etc.</p><p>We displayed all data received from a GraphQL backend in a series of custom UI Components that featured Pie Chart’s/ Bar Graph’s and complex drill down data sets. We also provided a Data Grid View which users can drill down to view API specific information.</p>",
+      "<p>I worked on several different client accounts and projects whilst with Publicis Sapient.<ul><li>HSBC - BOSF (Build Once Scale Fast)</li><li>Lloyds - Save & Invest</li><li>Schneider Electric - EnergySage</li></ul></p>",
     skills:
       "React&#44; Remix&#44; Vite&#44; NodeJS&#44; GraphQL&#44; NextJS&#44; Apollo Client&#44; GraphQL&#44; Jest&#44; React Testing Library&#44; styled-components&#44; Storybook&#44; CSS&#44; SASS",
     className: "publicis-sapient",
@@ -13,6 +13,10 @@ export const projects = [
       {
         visual: "www.publicissapient.com",
         url: "https://www.publicissapient.com",
+      },
+      {
+        visual: "www.energysage.fr",
+        url: "https://www.energysage.fr",
       },
     ],
   },
