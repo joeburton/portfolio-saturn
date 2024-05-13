@@ -5,7 +5,7 @@ export const projects = [
     role: "Manager / Front-end Lead",
     company: "Publicis Sapient",
     description:
-      "<p>I worked on several different client accounts and projects whilst with Publicis Sapient.<ul><li>HSBC - BOSF (Build Once Scale Fast)</li><li>Lloyds - Save & Invest</li><li>Schneider Electric - EnergySage</li></ul></p>",
+      "<p><ul><li>HSBC - BOSF (Build Once Scale Fast)</li><li>Lloyds - Save & Invest</li><li>Schneider Electric - EnergySage</li></ul></p>",
     skills:
       "React&#44; Remix&#44; Vite&#44; NodeJS&#44; GraphQL&#44; NextJS&#44; Apollo Client&#44; GraphQL&#44; Jest&#44; React Testing Library&#44; styled-components&#44; Storybook&#44; CSS&#44; SASS",
     className: "publicis-sapient",
