@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import styles from "./Navigation.module.css";
 
 import { Home } from "../CustomIcons";
-import { Icon, Image } from "@chakra-ui/react";
+import { Hide, Icon, Image } from "@chakra-ui/react";
 import { getImageUrl } from "../../utils";
 
 export const Navigation = () => {
@@ -15,6 +15,7 @@ export const Navigation = () => {
     <nav className={styles.navigation}>
       <NavLink to={`/`} className={styles.homeIcon}>
         <Icon as={Home} width='20px' height='20px' mr='4px' />
+        <Hide>Home</Hide>
       </NavLink>
       <ul>
         <li>
