@@ -45,7 +45,6 @@ export default function Contact() {
       console.log("no query params", queryString);
   }
 
-  const piratesApi = `${import.meta.env.VITE_PORTFOLIO_API}/pirates-data`;
   return (
     <>
       <PageIntro

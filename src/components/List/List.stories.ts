@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
+import { pirates } from "../../../mocks/mock-data";
+
 import List from "./List";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
@@ -20,22 +22,14 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {
-    data: [
-      { _id: "randomId23423", role: "Engineer" },
-      { _id: "randomId234423", role: "QE" },
-      { _id: "randomId234423", role: "PO" },
-    ],
+    data: pirates.pirates,
     listName: "Primary List",
   },
 };
 
 export const Secondary: Story = {
   args: {
-    data: [
-      { _id: "randomId23423", role: "Engineer" },
-      { _id: "randomId234423", role: "QE" },
-      { _id: "randomId234423", role: "PO" },
-    ],
+    data: pirates.pirates,
     listName: "Secondary List",
   },
 };
