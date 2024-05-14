@@ -3,7 +3,7 @@ import { Flex } from "@chakra-ui/react";
 import { Navigation } from "../../components/Navigation";
 import { Footer } from "../../components/Footer";
 
-export default function Root() {
+function Root() {
   return (
     <Flex flexDirection='column' height='100vh'>
       <div className='main'>
@@ -16,3 +16,5 @@ export default function Root() {
     </Flex>
   );
 }
+
+export default Root;

@@ -11,10 +11,10 @@ const MSWIntercept = ({ url }: { url: string }) => {
       try {
         const response = await fetch(url);
         const data = await response.json();
-        if (!data.pirates) {
+        if (!data) {
           throw new Error("Data format incorrect");
         } else {
-          setData(data.pirates);
+          setData(data);
         }
       } catch (error) {
         showBoundary(error);

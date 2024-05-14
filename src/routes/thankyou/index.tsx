@@ -4,7 +4,7 @@ import { getImageUrl } from "../../utils";
 
 import styles from "./thankyou.module.css";
 
-export default function Thankyou() {
+function Thankyou() {
   return (
     <>
       <PageIntro
@@ -35,3 +35,5 @@ export default function Thankyou() {
     </>
   );
 }
+
+export default Thankyou;

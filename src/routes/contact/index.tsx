@@ -11,7 +11,7 @@ import { pigeons } from "../../data/pigeons";
 import styles from "./contact.module.css";
 import { ErrorBoundaryFallback } from "../../components/ErrorBoundaryFallback";
 
-export default function Contact() {
+function Contact() {
   const [randomItems] = useRandomArrayItems(pigeons, 3);
   return (
     <>
@@ -70,3 +70,5 @@ export default function Contact() {
     </>
   );
 }
+
+export default Contact;

@@ -23,7 +23,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { HiMiniAtSymbol, HiMiniDevicePhoneMobile } from "react-icons/hi2";
 import { Vercel, LinkedIn, GitHubMark } from "../../components/CustomIcons";
 
-export default function Splash() {
+function Splash() {
   return (
     <>
       <PageIntro
@@ -196,3 +196,5 @@ export default function Splash() {
     </>
   );
 }
+
+export default Splash;

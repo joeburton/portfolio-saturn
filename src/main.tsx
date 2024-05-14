@@ -1,15 +1,19 @@
+/* eslint-disable react-refresh/only-export-components */
+
 import React from "react";
 import { ChakraProvider } from "@chakra-ui/react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import loadable from "@loadable/component";
 import theme from "./theme";
 
 import Root from "./routes/root/root";
-import Work from "./routes/work";
-import Contact from "./routes/contact";
-import Exp from "./routes/exp";
-import Splash from "./routes/splash";
-import Thankyou from "./routes/thankyou";
+
+const Work = loadable(() => import("./routes/work"));
+const Contact = loadable(() => import("./routes/contact"));
+const Experiments = loadable(() => import("./routes/experiments"));
+const Splash = loadable(() => import("./routes/splash"));
+const Thankyou = loadable(() => import("./routes/thankyou"));
 
 import ErrorPage from "./pages/error-page";
 
@@ -36,7 +40,7 @@ const router = createBrowserRouter([
       },
       {
         path: "experiments",
-        element: <Exp />,
+        element: <Experiments />,
       },
       {
         path: "thankyou",

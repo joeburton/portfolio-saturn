@@ -10,7 +10,7 @@ import { projects } from "../../data/projects"; // temp data, will fetch from ap
 
 import styles from "./work.module.css";
 
-export default function Work() {
+function Work() {
   return (
     <>
       <PageIntro
@@ -55,3 +55,5 @@ export default function Work() {
     </>
   );
 }
+
+export default Work;
