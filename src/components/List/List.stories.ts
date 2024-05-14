@@ -22,14 +22,14 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {
-    data: pirates.pirates,
+    data: pirates,
     listName: "Primary List",
   },
 };
 
 export const Secondary: Story = {
   args: {
-    data: pirates.pirates,
+    data: pirates,
     listName: "Secondary List",
   },
 };
