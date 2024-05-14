@@ -1,21 +1,20 @@
 import { useEffect, useState } from "react";
 import { useErrorBoundary } from "react-error-boundary";
 
-import List, { JobInterface } from "../List/List";
+import List, { PiratesInterface } from "../List/List";
 
 const MSWIntercept = ({ url }: { url: string }) => {
-  const [projects, setData] = useState<JobInterface[]>();
+  const [pirates, setData] = useState<PiratesInterface[]>();
   const { showBoundary } = useErrorBoundary();
-
   useEffect(() => {
     async function getData() {
       try {
         const response = await fetch(url);
         const data = await response.json();
-        if (!Array.isArray(data)) {
+        if (!data.pirates) {
           throw new Error("Data format incorrect");
         } else {
-          setData(data);
+          setData(data.pirates);
         }
       } catch (error) {
         showBoundary(error);
@@ -28,9 +27,9 @@ const MSWIntercept = ({ url }: { url: string }) => {
 
   return (
     <>
-      {projects && Array.isArray(projects) && (
+      {pirates && Array.isArray(pirates) && (
         <div data-testid='list'>
-          <List data={projects} listName='Projects' />
+          <List data={pirates} listName='Projects' />
         </div>
       )}
     </>

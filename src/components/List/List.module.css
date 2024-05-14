@@ -1,16 +1,20 @@
-.list {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: left;
+.list ul {
   list-style: none;
   font-size: 12px;
   overflow: hidden;
   padding: 0;
 }
 
-.list li {
-  padding: 4px;
+.list ul li {
+  padding: 8px;
+  background-color: rgb(204, 208, 196);
 }
 
-.list > li:nth-child(odd) {
-  background-color: #eee;
+.list ul > li:nth-child(odd) {
+  background-color: white;
+}
+
+.list h2 {
+  padding: 10px 0 10px 8px;
+  background-color: rgb(204, 208, 196);
 }

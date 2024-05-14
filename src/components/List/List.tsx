@@ -2,19 +2,21 @@ import { useState } from "react";
 import classes from "./List.module.css";
 import { generateUniqueId } from "../../utils";
 
-export interface JobInterface {
-  class?: string;
-  company?: string;
-  description?: string;
-  links?: null | string[];
-  logo?: string;
-  order?: number;
-  role: string;
-  skills?: string;
-  _id: string;
+export interface PiratesInterface {
+  id: string;
+  email: string;
+  name: string;
 }
 
-const ListItem = ({ id, role }: { id: string; role: string }) => {
+const ListItem = ({
+  id,
+  name,
+  email,
+}: {
+  id: string;
+  name: string;
+  email: string;
+}) => {
   const [showId, setShowId] = useState(false);
 
   const displayId = () => {
@@ -23,7 +25,7 @@ const ListItem = ({ id, role }: { id: string; role: string }) => {
 
   return (
     <li data-testid={id} onClick={displayId}>
-      {role} {showId && ` - ${id}`}
+      {name} {showId && ` - ${email}`}
     </li>
   );
 };
@@ -32,20 +34,21 @@ const List = ({
   data,
   listName,
 }: {
-  data: JobInterface[];
+  data: PiratesInterface[];
   listName: string;
 }) => {
   return (
-    <>
+    <div className={classes.list}>
       <h2>{listName}</h2>
-      <ul data-testid='select-list' className={classes.list}>
+      <ul data-testid='select-list'>
         {data && (
           <>
-            {data.map((item) => {
+            {data.map((pirate) => {
               return (
                 <ListItem
-                  id={item._id}
-                  role={item.role}
+                  id={pirate.id}
+                  name={pirate.name}
+                  email={pirate.email}
                   key={generateUniqueId()}
                 />
               );
@@ -53,7 +56,7 @@ const List = ({
           </>
         )}
       </ul>
-    </>
+    </div>
   );
 };
 

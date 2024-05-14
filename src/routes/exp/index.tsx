@@ -14,11 +14,10 @@ import {
 import { ErrorBoundary } from "react-error-boundary";
 
 import { PageIntro } from "../../components/PageIntro";
-import { Carousel } from "../../components/Carousel";
 import MSWIntercept from "../../components/MSWIntercept/MSWIntercept";
 import { SmartCarousel } from "../../components/SmartCarousel";
 
-import { items } from "../../../mocks/data";
+import { items } from "../../../mocks/mock-data";
 
 import { ErrorBoundaryFallback } from "../../components/ErrorBoundaryFallback";
 import { getImageUrl } from "../../utils";
@@ -26,7 +25,7 @@ import { GitHubMark, LinkedIn, Vercel } from "../../components/CustomIcons";
 
 import styles from "./exp.module.css";
 import { useRandomArrayItems } from "../../hooks";
-import { engineers } from "../../../mocks/engineers";
+import { engineers } from "../../data/engineers";
 
 export default function Contact() {
   const queryString = window.location.search;
@@ -34,6 +33,19 @@ export default function Contact() {
   const experiments = urlParams.get("experiments");
 
   const [randomItems] = useRandomArrayItems(engineers, 3);
+
+  switch (queryString) {
+    case "?experiments=inactive":
+      console.log("experiments inactive", queryString);
+      break;
+    case "?experiments=active":
+      console.log("experiments active", queryString);
+      break;
+    default:
+      console.log("no query params", queryString);
+  }
+
+  const piratesApi = `${import.meta.env.VITE_PORTFOLIO_API}/pirates-data`;
   return (
     <>
       <PageIntro
@@ -151,15 +163,16 @@ export default function Contact() {
             <Card variant='elevated'>
               <CardBody>
                 <SimpleGrid columns={1} spacing={8}>
-                  <Box height='auto'>
-                    <Carousel />
-                  </Box>
                   <Box height='auto' margin='0 auto'>
                     <SmartCarousel items={items} />
                   </Box>
                   <Box bg='grey' height='auto'>
                     <ErrorBoundary FallbackComponent={ErrorBoundaryFallback}>
-                      <MSWIntercept url='http://joe-burton.com/api/source' />
+                      <MSWIntercept
+                        url={`${
+                          import.meta.env.VITE_PORTFOLIO_API
+                        }/pirates-data`}
+                      />
                     </ErrorBoundary>
                   </Box>
                   <Grid templateColumns='repeat(5, 1fr)' gap={6}>

@@ -1,9 +1,9 @@
 import { http, HttpResponse } from "msw";
 
-import { roles } from "./data";
+import { pirates } from "./mock-data";
 
 export const handlers = [
-  http.get("http://joe-burton.com/api/source", () => {
-    return HttpResponse.json(roles);
+  http.get("https://portfolio-saturn-api.vercel.app/pirates-data", () => {
+    return HttpResponse.json(pirates);
   }),
 ];

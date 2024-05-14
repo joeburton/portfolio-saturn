@@ -64,3 +64,58 @@ export const items = [
       "https://media.istockphoto.com/photos/chrome-side-mirror-picture-id89356837?k=20&m=89356837&s=612x612&w=0&h=s7nd8Fz2-7_3LNQbYaQtS28jre1ls6OB8_O2kb8gYhY=",
   },
 ];
+
+export const pirates = {
+  pirates: [
+    {
+      id: "234234",
+      name: "Captain Hook",
+      email: "captainhook@pirates.com",
+    },
+    {
+      id: "345345",
+      name: "Blackbeard",
+      email: "blackbeard@pirates.com",
+    },
+    {
+      id: "456456",
+      name: "William Kidd",
+      email: "williamkidd@pirates.com",
+    },
+    {
+      id: "567567",
+      name: "Bartholomew Roberts",
+      email: "bartholomewroberts@pirates.com",
+    },
+    {
+      id: "678678",
+      name: "Anne Bonny",
+      email: "annebonny@pirates.com",
+    },
+    {
+      id: "789789",
+      name: "Edward Teach",
+      email: "edwardteach@pirates.com",
+    },
+    {
+      id: "890890",
+      name: "Calico Jack",
+      email: "calicojack@pirates.com",
+    },
+    {
+      id: "901901",
+      name: "Henry Morgan",
+      email: "henrymorgan@pirates.com",
+    },
+    {
+      id: "012012",
+      name: "Francis Drake",
+      email: "francisdrake@pirates.com",
+    },
+    {
+      id: "123123",
+      name: "Samuel Bellamy",
+      email: "samuelbellamy@pirates.com",
+    },
+  ],
+};

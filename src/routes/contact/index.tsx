@@ -6,7 +6,7 @@ import { PageIntro } from "../../components/PageIntro";
 
 import { getImageUrl } from "../../utils";
 import { useRandomArrayItems } from "../../hooks";
-import { pigeons } from "../../../mocks/pigeons";
+import { pigeons } from "../../data/pigeons";
 
 import styles from "./contact.module.css";
 import { ErrorBoundaryFallback } from "../../components/ErrorBoundaryFallback";

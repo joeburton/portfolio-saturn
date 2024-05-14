@@ -6,7 +6,7 @@ import { PageIntro } from "../../components/PageIntro";
 
 import { generateUniqueId } from "../../utils";
 
-import { projects } from "../../../mocks/projects"; // temp data, will fetch from api
+import { projects } from "../../data/projects"; // temp data, will fetch from api
 
 import styles from "./work.module.css";
 

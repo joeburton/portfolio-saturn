@@ -1,5 +1,5 @@
 import { SimpleGrid, Box, Image } from "@chakra-ui/react";
-import { pigeons } from "../../../mocks/pigeons";
+import { pigeons } from "../../data/pigeons";
 import { generateUniqueId, getImageUrl } from "../../utils";
 
 export const ImageGrid = () => {

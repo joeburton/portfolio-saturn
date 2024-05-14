@@ -1,7 +1,6 @@
 .carousel {
   overflow: hidden;
   display: flex;
-  max-width: 620px;
 }
 
 .left,
@@ -45,9 +44,8 @@
 
 .tracker {
   display: flex;
-  max-width: 620px;
-  display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .tracker li {
