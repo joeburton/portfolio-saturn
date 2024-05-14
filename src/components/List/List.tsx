@@ -40,7 +40,7 @@ const List = ({
   return (
     <div className={classes.list}>
       <h2>{listName}</h2>
-      <ul data-testid='select-list'>
+      <ul>
         {data && (
           <>
             {data.map((pirate) => {
