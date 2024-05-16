@@ -14,6 +14,10 @@
   flex-shrink: 0;
 }
 
-img:hover {
+img {
   filter: grayscale(1);
+}
+
+img:hover {
+  filter: grayscale(0);
 }
