@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "types": "./dist/types/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -43,6 +44,7 @@
     "@storybook/test": "^7.6.5",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^29.5.11",
     "@types/loadable__component": "^5.13.9",
     "@types/node": "^20.10.5",

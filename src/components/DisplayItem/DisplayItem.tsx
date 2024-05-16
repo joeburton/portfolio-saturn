@@ -66,7 +66,7 @@ export const DisplayItem = ({
         >
           <Image
             src={getImageUrl("/assets/logos/", logo)}
-            alt='Publicis Sapient'
+            alt={company}
             maxWidth={logoPixelWidth[logoSize]}
             mb='20px'
           />
@@ -84,6 +84,7 @@ export const DisplayItem = ({
             fontSize='sm'
             className={`${styles.contentItem} ${styles.description} `}
             style={constrainContent ? { height: open ? `100%` : `70px` } : {}}
+            data-testid='description'
           >
             {parse(description)}
           </Text>
@@ -92,10 +93,18 @@ export const DisplayItem = ({
               fontSize='sm'
               display='block'
               p='8px 0'
+              data-testid='toggle-text'
               onClick={() => setOpen(!open)}
             >
-              Expand
-              {open ? <ChevronUpIcon mx='6px' /> : <ChevronDownIcon mx='6px' />}
+              {open ? (
+                <>
+                  Collapse <ChevronUpIcon mx='6px' />
+                </>
+              ) : (
+                <>
+                  Expand <ChevronDownIcon mx='6px' />
+                </>
+              )}
             </Link>
           )}
           {links?.length &&
