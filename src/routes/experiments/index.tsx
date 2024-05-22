@@ -16,6 +16,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import { PageIntro } from "../../components/PageIntro";
 import MSWIntercept from "../../components/MSWIntercept/MSWIntercept";
 import { SmartCarousel } from "../../components/SmartCarousel";
+import { BarGraph } from "../../components/BarGraph";
 
 import { items } from "../../../mocks/mock-data";
 
@@ -174,6 +175,14 @@ function Experiments() {
                       />
                     </ErrorBoundary>
                   </Box>
+                  <BarGraph
+                    data={[
+                      { label: "A", value: 150 },
+                      { label: "B", value: 234 },
+                      { label: "C", value: 540 },
+                      { label: "D", value: 230 },
+                    ]}
+                  />
                   <Grid templateColumns='repeat(5, 1fr)' gap={6}>
                     <GridItem w='100%' h='10' bg='blue.500' />
                     <GridItem w='100%' h='10' bg='blue.500' />

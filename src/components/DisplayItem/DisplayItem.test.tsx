@@ -64,16 +64,6 @@ describe("DisplayItem", () => {
     expect(toggleText).toHaveTextContent("Collapse");
   });
 
-  it("checking vitest spyOn works 🤓", () => {
-    const cart = {
-      getApples: () => 42,
-    };
-    const spy = vi.spyOn(cart, "getApples").mockReturnValue(10);
-
-    console.log(cart.getApples());
-    expect(spy).toHaveBeenCalled();
-  });
-
   it("should spyOn the utility function generateUniqueId and check the number of times it has been called 🤓", () => {
     const spyOnGenerateUniqueId = vi.spyOn(UtilsModule, "generateUniqueId");
 
@@ -126,6 +116,7 @@ describe("DisplayItem", () => {
     );
 
     expect(mockGenerateUniqueId).toHaveBeenCalled();
+    expect(UtilsModule.generateUniqueId).toHaveBeenCalledTimes(1);
 
     vi.restoreAllMocks();
   });
