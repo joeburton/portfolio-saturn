@@ -25,7 +25,7 @@
 a.homeIcon {
   display: flex;
   align-items: center;
-  margin-left: 10px;
+  margin: 0 26px 0 10px;
 }
 
 a.homeIcon {

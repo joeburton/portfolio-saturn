@@ -38,7 +38,7 @@ export const Navigation = () => {
             Contact
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             to={`experiments`}
             className={({ isActive, isPending }) =>
@@ -47,7 +47,7 @@ export const Navigation = () => {
           >
             Experiments
           </NavLink>
-        </li>
+        </li> */}
       </ul>
       <Image
         className={styles.logo}
