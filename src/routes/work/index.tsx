@@ -24,7 +24,10 @@ function Work() {
         detail={
           <>
             For more details, feel free to visit my{" "}
-            <a href='https://www.linkedin.com/in/joeburton1979' target='_blank'>
+            <a
+              href='https://www.linkedin.com/in/joejamesburton'
+              target='_blank'
+            >
               LinkedIn
             </a>{" "}
             profile.
