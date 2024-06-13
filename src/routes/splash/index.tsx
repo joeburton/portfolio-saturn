@@ -41,8 +41,8 @@ function Splash() {
             <CardBody>
               <Text mb='10px' fontSize='md'>
                 I have over 20 years of industry experience working as a Web
-                Developer, with much of the last 15 years focused on Front-end
-                Development. During this time, I've gained experience working
+                Developer, with much of the last 15 years focused on front-end
+                development. During this time, I've gained experience working
                 for a broad range of companies, from advertising agencies such
                 as{" "}
                 <ChakraLink
