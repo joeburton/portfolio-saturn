@@ -2,10 +2,10 @@ export const projects = [
   {
     logo: "publicissapient.png",
     logoSize: "small",
-    role: "Manager / Front-end Lead",
+    role: "Front-end Lead/ Manager",
     company: "Publicis Sapient",
     description:
-      "<p><ul><li>HSBC - BOSF (Build Once Scale Fast)</li><li>Lloyds - Save & Invest</li><li>Schneider Electric - EnergySage</li></ul></p>",
+      "<p>Working as a consultant largely remotely with some office visits, helping to deliver a variety of Front-end projects, either working as a hands-on Front-end Team Lead or Senior Front-end Engineer.</p><p>Schneider Electric / Energy Sage<br />I worked as a Fullstack Engineer on this project, building custom React components and Node.js back-end logic for the full-stack Remix application. My main focus was building a complex multi-step form for users to retrieve the French equivalent of an EPC certificate. I was also involved in configuring the CMS, Builder.io, along with day-to-day tasks such as fixing bugs, optimising SEO, increasing test coverage, and improving page speed, accessibility, and usability. <br />Skills: Remix, React, TypeScript, Node.js, Builder.io, CSS, and HTML.</p><p>Lloyds / Save & Invest<br />Managed a small team of Front-end Engineers that successfully delivered an online saving and investment calculator wrapped in the Lloyds & Halifax banking iOS app. We used React & TypeScript in conjunction with Lloyds’ own React framework, Interstellar and their UI library, Constellation. We worked closely with both these internal teams, helping to fix bugs and add improved features.<br />Skills: React & TypeScript, Jest & React Testing Library, Dynatrace, Google Lighthouse.</p><p>HSBC / API Estate Insights Tool<br /> Team Lead and Front-end Architect. Successfully delivered a fully responsive SPA for HSBC staff to gain insights into their API estate. We also developed a custom react component library extending Recharts. <br />Skills: React & TypeScript, Apollo Client, GraphQL, Node.js & Express. ",
     skills:
       "React&#44; Remix&#44; Vite&#44; NodeJS&#44; GraphQL&#44; NextJS&#44; Apollo Client&#44; GraphQL&#44; Jest&#44; React Testing Library&#44; styled-components&#44; Storybook&#44; CSS&#44; SASS",
     className: "publicis-sapient",
