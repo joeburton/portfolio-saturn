@@ -28,7 +28,7 @@ describe("DisplayItem", () => {
       </ChakraBaseProvider>
     );
 
-    expect(getByText(/Manager \/ Front-end Lead/)).toBeInTheDocument();
+    expect(getByText(/Front-end Lead\/ Manager/)).toBeInTheDocument();
   });
 
   it("should expand the text area when the Expand > link is clicked", async () => {
