@@ -1,6 +1,6 @@
 import { useState } from "react";
 import parse from "html-react-parser";
-import { Card, Image, CardBody, Text, Link, Box } from "@chakra-ui/react";
+import { Card, Image, CardBody, Text, Link, Box, Tag } from "@chakra-ui/react";
 import {
   ExternalLinkIcon,
   ChevronDownIcon,
@@ -36,6 +36,20 @@ export type DisplayItemInterface = {
   links?: Links[];
 };
 
+interface SkillsInterface {
+  skills: string[];
+}
+
+const Skills = ({ skills }: SkillsInterface) => (
+  <>
+    {skills.map((skill: string) => (
+      <Tag key={generateUniqueId()} colorScheme='green' m={"2px 2px 2px 0"}>
+        {skill}
+      </Tag>
+    ))}
+  </>
+);
+
 export const DisplayItem = ({
   rowEnd = false,
   logo,
@@ -51,6 +65,7 @@ export const DisplayItem = ({
 
   const constrainContent = description.length > 300 ? true : false;
 
+  const skillSet: string[] = skills.split(",");
   return (
     <Box width={{ base: "100%", lg: "33.3%" }}>
       <Card
@@ -77,7 +92,7 @@ export const DisplayItem = ({
             Role: {role}
           </Text>
           <Text fontSize='sm' className={styles.contentItem}>
-            Skills: {parse(skills)}
+            <Skills skills={skillSet} />
           </Text>
           <Text
             as='div'
