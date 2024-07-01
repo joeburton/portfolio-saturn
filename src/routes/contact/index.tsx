@@ -1,18 +1,13 @@
-import { Card, CardBody, Box, SimpleGrid, Image, Show } from "@chakra-ui/react";
+import { Box, Card, CardBody } from "@chakra-ui/react";
 import { ErrorBoundary } from "react-error-boundary";
 
 import { FormikContactForm } from "../../components/FormikContactForm";
 import { PageIntro } from "../../components/PageIntro";
 
-import { getImageUrl } from "../../utils";
-import { useRandomArrayItems } from "../../hooks";
-import { pigeons } from "../../data/pigeons";
-
-import styles from "./contact.module.css";
 import { ErrorBoundaryFallback } from "../../components/ErrorBoundaryFallback";
+import styles from "./contact.module.css";
 
 function Contact() {
-  const [randomItems] = useRandomArrayItems(pigeons, 3);
   return (
     <>
       <PageIntro
