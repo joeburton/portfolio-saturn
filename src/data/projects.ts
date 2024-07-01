@@ -7,7 +7,7 @@ export const projects = [
     description:
       "<p>Working as a consultant helping to deliver a variety of front-end focused projects. Either operating as a Front-end Team Lead or Senior Engineer.</p><p>Schneider Electric / Energy Sage<br />I worked as a Full-stack Engineer on this project, building custom React components and Node.js back-end logic for the full-stack Remix application. My main focus was building a complex multi-step form for users to retrieve the French equivalent of an EPC certificate. I was also involved in configuring the CMS, Builder.io, along with day-to-day tasks such as fixing bugs, optimising SEO, increasing test coverage, and improving page speed, accessibility, and usability. <br />Skills: Remix, React, TypeScript, Node.js, Builder.io, CSS, and HTML.</p><p>Lloyds / Save & Invest<br />Managed a small team of Front-end Engineers that successfully delivered an online saving and investment calculator wrapped in the Lloyds & Halifax banking iOS app. We used React & TypeScript in conjunction with Lloyds’ own React framework, Interstellar and their UI library, Constellation. We worked closely with both these internal teams, helping to fix bugs and add new and improved features.<br />Skills: React & TypeScript, Jest & React Testing Library, Dynatrace, Google Lighthouse.</p><p>HSBC / API Estate Insights Tool<br /> Team Lead and Front-end Architect. Successfully delivered a fully responsive SPA for HSBC staff to gain insights into their API estate. We also developed a custom react component library extending Recharts. <br />Skills: React & TypeScript, Apollo Client, GraphQL, Node.js & Express. ",
     skills:
-      "React, TypeScript, Remix, Vite, Node.js, GraphQL, Next.js, Apollo Client, GraphQL, Jest, React Testing Library, Storybook, styled-components, CSS, SASS, Builder.io, Dynatrace, Google Lighthouse",
+      "React, TypeScript, JavaScript, Remix, Vite, Redux, Zustand, Jest, React Testing Library, Mock Service Worker, GraphQL, Apollo Client, Next.js, Node.js, Express, Storybook, styled-components, HTML, CSS, SASS, Builder.io, Dynatrace, Google Lighthouse",
     className: "publicis-sapient",
     links: [
       {
@@ -28,7 +28,7 @@ export const projects = [
     description:
       "<p>I worked for World First as a contract Front-end Engineer for the first 6 months. After becoming permanent as a Senior Software Engineer, I was finally promoted to Front-end Team Lead. I initially worked on the trading platform, integrating Xero accountancy software. Following this, I joined the statements team, where I implemented new UI features and components, improved the platform's micro front-end codebases by moving from React Classes to React Hooks, increased test coverage, and enhanced general code quality.</p><p>After being promoted to Front-end Team Lead, I was responsible for managing the team's goals, deliverables, and conducting individuals’ performance reviews. During my time as Front-end Lead, my team and I were heavily involved in helping deliver a new multi-region front-end for the trading platform. We used react-i18next for translations and developed region-specific logic to cater for varying rules, regulations, and rates. On a day-to-day basis, we worked closely with back-end teams, Product, UX, and Design across the UK and APAC to ensure everything ran as smoothly as possible.</p>",
     skills:
-      "React, TypeScript, HTML, CSS, JavaScript, Jest, react-i18next, React Testing Library, Ant Design, LESS, Webpack, Storybook, Rollup, Node.js, Express",
+      "React, TypeScript, HTML, CSS, JavaScript, Jest, React Testing Library, react-i18next, Ant Design, LESS, Webpack, Storybook, Rollup, Node.js, Express",
     className: "worldfirst-logo",
     links: [
       {
@@ -126,7 +126,7 @@ export const projects = [
     company: "Freelance",
     description:
       "<p>Senior Front-end Developer – A good example of work I did whilst with Millimetre Media is the Helix website. I was the sole Front-end Developer on this project. I used a Mobile First Responsive approach, using HTML5, CSS3 JavaScript/ jQuery and Browserify to manage my modules with Gulp to manage the front-end workflow http://helixproperty.co.uk.</>",
-    skills: "JavaScript/jQuery, Browserify, HTML5, CSS3, Gulp",
+    skills: "JavaScript, jQuery, Browserify, HTML5, CSS3, Gulp",
     className: "helix-logo",
     links: [
       { visual: "www.helixproperty.co.uk", url: "http://helixproperty.co.uk" },
@@ -140,7 +140,7 @@ export const projects = [
     description:
       "<p>I worked for PhotoBox in the incubator team on a project developing a Mobile First Responsive website for the sale of Birth Announcement Cards. I worked across the front-end and back-end of the website. On the front-end we used JavaScript and jQuery with Browserify to handle modules and Grunt to manage the front-end workflow. On the back-end of the site we used Node with the Express framework.</p>",
     skills:
-      "JavaScript/jQuery, Node &amp; Express, Handlebars, Browserify, Grunt, HTML5, CSS3/SASS",
+      "JavaScript, jQuery, Node &amp; Express, Handlebars, Browserify, Grunt, HTML5, CSS3/SASS",
     className: "photobox-logo",
     links: [
       { visual: "www.photobox.co.uk", url: "https://www.photobox.co.uk" },
@@ -182,8 +182,8 @@ export const projects = [
     role: "Senior UI Developer",
     company: "Jam - The Engine Group",
     description:
-      "<p>I worked for Jam @ The Engine Group in Soho as a Mobile Front-end Developer building HTML5, CSS3, JavaScript/jQuery mobile and desktop websites. This contract was a great opportunity to develop my Mobile development skills working on the mobile version of the fabulous magazine http://fabulousmag.co.uk and several small Sky mobile promotional sites.</p>",
-    skills: "JavaScript/jQuery, Backbone, Underscore, HTML5, CSS3, LESS/CSS",
+      "<p>I worked for Jam @ The Engine Group in Soho as a Mobile Front-end Developer building HTML5, CSS3, JavaScript, jQuery mobile and desktop websites. This contract was a great opportunity to develop my Mobile development skills working on the mobile version of the fabulous magazine http://fabulousmag.co.uk and several small Sky mobile promotional sites.</p>",
+    skills: "JavaScript, jQuery, Backbone, Underscore, HTML5, CSS3, LESS/CSS",
     className: "jam-logo",
     links: [
       { visual: "enginegroup.com/uk", url: "https://enginegroup.com/uk" },
@@ -201,7 +201,7 @@ export const projects = [
     description:
       "<p>I was responsible for managing a team of Front-end Developers in the responsive rebuild of bluesq.com. This involved creating an HTML5, LESS/ CSS and JavaScript framework that worked across mobile, tablet and desktop. I was also responsible on a day-to-day basis for managing the production of HTML prototypes to demonstrate different ideas from the UX Team.</p>",
     skills:
-      "Team Leadership, Responsive Design & Development, Backbone, JavaScript/jQuery, HTML5, LESS/CSS3",
+      "Team Leadership, Responsive Design & Development, Backbone, JavaScript, jQuery, HTML5, LESS/CSS3",
     className: "bluesquare-logo",
     links: [{ visual: "www.rank.com", url: "https://www.rank.com" }],
   },
@@ -211,8 +211,8 @@ export const projects = [
     role: "Front-end Developer",
     company: "Sapient",
     description:
-      "<p>Whilst working for Sapient on this contract I was based client side at John Lewis, working in a team of Front-end Developers in an Agile Software Development Environment. I was responsible for creating well structured JavaScript/jQuery functionality and clean HTML/CSS template components keeping all code as re-usable and standards compliant as possible. We introduced HTML5 and CSS3 to the project using a progressive enhancement approach so as not to limit the site to just the latest browsers.</p>",
-    skills: "JavaScript/jQuery, XHTML, CSS3",
+      "<p>Whilst working for Sapient on this contract I was based client side at John Lewis, working in a team of Front-end Developers in an Agile Software Development Environment. I was responsible for creating well structured JavaScript, jQuery functionality and clean HTML/CSS template components keeping all code as re-usable and standards compliant as possible. We introduced HTML5 and CSS3 to the project using a progressive enhancement approach so as not to limit the site to just the latest browsers.</p>",
+    skills: "JavaScript, jQuery, HTML, CSS3",
     className: "sapient-logo",
     links: [
       {
@@ -229,7 +229,7 @@ export const projects = [
     role: "Front-end Developer",
     company: "Freelance",
     description: "<p>Tyrrells Crisps</p>",
-    skills: "JavaScript/jQuery, XHTML, CSS3",
+    skills: "JavaScript, jQuery, HTML, CSS3",
     className: "tyrrells-logo",
     links: [
       {
@@ -244,8 +244,8 @@ export const projects = [
     role: "Front-end Developer",
     company: "Addison",
     description:
-      "<p>Addison is a publishing-house/digital-agency based at London Bridge; I worked there for two months as a Front-end Developer. Whilst at Addison I completed three projects which required creating pixel perfect XHTML/CSS layouts. All three websites were for end of year financial reports that needed a lot of complex data displayed in tables and charts that both had to look good and comply with current web standards. www.annualreport.heineken.com</p>",
-    skills: "Team Lead, JavaScript/jQuery, XHTML, CSS3",
+      "<p>Addison is a publishing-house/digital-agency based at London Bridge; I worked there for two months as a Front-end Developer. Whilst at Addison I completed three projects which required creating pixel perfect HTML/CSS layouts. All three websites were for end of year financial reports that needed a lot of complex data displayed in tables and charts that both had to look good and comply with current web standards. www.annualreport.heineken.com</p>",
+    skills: "Team Lead, JavaScript, jQuery, HTML, CSS3",
     className: "addison-logo",
     links: [
       {
@@ -269,8 +269,8 @@ export const projects = [
     role: "Front-end Developer",
     company: "Guardian",
     description:
-      "<p>I worked for the Guardian as a Front-end Developer creating XHTML/CSS cross browser/platform compliant templates for www.thegreatplanthunt.org.</p>",
-    skills: "JavaScript/jQuery, XHTML, CSS3",
+      "<p>I worked for the Guardian as a Front-end Developer creating HTML/CSS cross browser/platform compliant templates for www.thegreatplanthunt.org.</p>",
+    skills: "JavaScript, jQuery, HTML, CSS3",
     links: [
       { visual: "www.theguardian.com", url: "https://www.theguardian.com/" },
       {
@@ -287,7 +287,7 @@ export const projects = [
     company: "Queensland Goverment",
     description:
       "<p>DOC (Department of Communities) Queensland Government Australia. I worked for the DOC on HTML/CSS table-less page design and development and the integration of front-end templates with their PHP based CMS.</p>",
-    skills: "Flash, JavaScript/jQuery, XHTML, CSS",
+    skills: "Flash, JavaScript, jQuery, HTML, CSS",
     links: [
       { visual: "https://www.qld.gov.au", url: "https://www.qld.gov.au/" },
     ],
@@ -300,7 +300,7 @@ export const projects = [
     company: "Ogilvy",
     description:
       "<p>I worked for Ogilvy as a Developer working across a broad range of brands such as BT, Yahoo, Amex and Unilever. I was responsible for the front-end build of websites adhering to strict brand-guidelines and W3C best practises.</p>",
-    skills: "Flash, JavaScript/jQuery, XHTML, CSS",
+    skills: "Flash, JavaScript, jQuery, HTML, CSS",
     links: [{ visual: "https://ogilvy.co.uk", url: "https://ogilvy.co.uk" }],
   },
 ];
