@@ -28,41 +28,14 @@ function Contact() {
         }
       />
       <div className={styles.contact}>
-        <Box maxWidth={"900px"} m='0 auto'>
+        <Box maxWidth={{ base: "100%", md: "768px" }} m='0 auto'>
           <Card variant='elevated'>
             <CardBody>
-              <SimpleGrid columns={[1, 1, 1, 2]} spacing={5}>
-                <Box>
-                  <Show above='lg'>
-                    <Image
-                      src={getImageUrl(
-                        "/assets/",
-                        "pigeons-ai/carrier-pigeon-ai-10.png"
-                      )}
-                      alt='Cliché image of a carrier pigeon. This image was generated using AI 🤓 how ironic.'
-                    />
-                  </Show>
-                  <SimpleGrid
-                    columns={[3]}
-                    spacing='10px'
-                    mt={[0, 0, 0, "10px"]}
-                  >
-                    {randomItems instanceof Array &&
-                      randomItems.map((item: string) => (
-                        <Image
-                          src={getImageUrl("/assets/", `pigeons-ai/${item}`)}
-                          alt='Cliché image of a carrier pigeon. This image was generated using AI 🤓 how ironic.'
-                          key={item}
-                        />
-                      ))}
-                  </SimpleGrid>
-                </Box>
-                <Box>
-                  <ErrorBoundary FallbackComponent={ErrorBoundaryFallback}>
-                    <FormikContactForm />
-                  </ErrorBoundary>
-                </Box>
-              </SimpleGrid>
+              <Box>
+                <ErrorBoundary FallbackComponent={ErrorBoundaryFallback}>
+                  <FormikContactForm />
+                </ErrorBoundary>
+              </Box>
             </CardBody>
           </Card>
         </Box>
