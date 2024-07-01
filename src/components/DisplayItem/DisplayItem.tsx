@@ -77,7 +77,7 @@ export const DisplayItem = ({
       >
         <CardBody
           className={styles.cardBody}
-          minHeight={{ base: "auto", lg: "500px" }}
+          minHeight={{ base: "auto", lg: "600px", xl: "550px" }}
         >
           <Image
             src={getImageUrl("/assets/logos/", logo)}

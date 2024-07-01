@@ -7,7 +7,7 @@ export const projects = [
     description:
       "<p>Working as a consultant helping to deliver a variety of front-end focused projects. Either operating as a Front-end Team Lead or Senior Engineer.</p><p>Schneider Electric / Energy Sage<br />I worked as a Full-stack Engineer on this project, building custom React components and Node.js back-end logic for the full-stack Remix application. My main focus was building a complex multi-step form for users to retrieve the French equivalent of an EPC certificate. I was also involved in configuring the CMS, Builder.io, along with day-to-day tasks such as fixing bugs, optimising SEO, increasing test coverage, and improving page speed, accessibility, and usability. <br />Skills: Remix, React, TypeScript, Node.js, Builder.io, CSS, and HTML.</p><p>Lloyds / Save & Invest<br />Managed a small team of Front-end Engineers that successfully delivered an online saving and investment calculator wrapped in the Lloyds & Halifax banking iOS app. We used React & TypeScript in conjunction with Lloyds’ own React framework, Interstellar and their UI library, Constellation. We worked closely with both these internal teams, helping to fix bugs and add new and improved features.<br />Skills: React & TypeScript, Jest & React Testing Library, Dynatrace, Google Lighthouse.</p><p>HSBC / API Estate Insights Tool<br /> Team Lead and Front-end Architect. Successfully delivered a fully responsive SPA for HSBC staff to gain insights into their API estate. We also developed a custom react component library extending Recharts. <br />Skills: React & TypeScript, Apollo Client, GraphQL, Node.js & Express. ",
     skills:
-      "React, TypeScript, JavaScript, Remix, Vite, Redux, Zustand, Jest, React Testing Library, Mock Service Worker, GraphQL, Apollo Client, Next.js, Node.js, Express, Storybook, styled-components, HTML, CSS, SASS, Builder.io, Dynatrace, Google Lighthouse",
+      "React, TypeScript, JavaScript, Remix, Vite, Redux, Zustand, Jest, RTL, node/msw, GraphQL, Apollo Client, Next.js, Node.js, Express, Storybook, styled-components, HTML, CSS, SASS, Builder.io, Dynatrace, Google Lighthouse",
     className: "publicis-sapient",
     links: [
       {
@@ -247,7 +247,7 @@ export const projects = [
     role: "Front-end Developer",
     company: "Addison",
     description:
-      "<p>Addison is a publishing-house/digital-agency based at London Bridge; I worked there for two months as a Front-end Developer. Whilst at Addison I completed three projects which required creating pixel perfect HTML/CSS layouts. All three websites were for end of year financial reports that needed a lot of complex data displayed in tables and charts that both had to look good and comply with current web standards. www.annualreport.heineken.com</p>",
+      "<p>Addison is a publishing-house/ digital-agency based at London Bridge; I worked there for two months as a Front-end Developer. Whilst at Addison I completed three projects which required creating pixel perfect HTML/CSS layouts. All three websites were for end of year financial reports that needed a lot of complex data displayed in tables and charts. www.annualreport.heineken.com</p>",
     skills: "Team Lead, JavaScript, jQuery, HTML, CSS3",
     className: "addison-logo",
     links: [
@@ -272,7 +272,7 @@ export const projects = [
     role: "Front-end Developer",
     company: "Guardian",
     description:
-      "<p>I worked for the Guardian as a Front-end Developer creating HTML/CSS cross browser/platform compliant templates for www.thegreatplanthunt.org.</p>",
+      "<p>I worked for the Guardian as a Front-end Developer creating HTML/ CSS cross browser/ platform compliant templates for www.thegreatplanthunt.org.</p>",
     skills: "JavaScript, jQuery, HTML, CSS3",
     links: [
       { visual: "www.theguardian.com", url: "https://www.theguardian.com/" },
@@ -289,7 +289,7 @@ export const projects = [
     role: "Developer",
     company: "Queensland Goverment",
     description:
-      "<p>DOC (Department of Communities) Queensland Government Australia. I worked for the DOC on HTML/CSS table-less page design and development and the integration of front-end templates with their PHP based CMS.</p>",
+      "<p>DOC (Department of Communities) Queensland Government Australia. I worked for the DOC on HTML/ CSS table-less page design and development and the integration of front-end templates with their PHP based CMS.</p>",
     skills: "Flash, JavaScript, jQuery, HTML, CSS",
     links: [
       { visual: "https://www.qld.gov.au", url: "https://www.qld.gov.au/" },
