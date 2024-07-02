@@ -85,7 +85,7 @@ describe("DisplayItem", () => {
       </ChakraBaseProvider>
     );
 
-    expect(spyOnGenerateUniqueId).toHaveBeenCalledTimes(16);
+    expect(spyOnGenerateUniqueId).toHaveBeenCalledTimes(17);
 
     vi.restoreAllMocks();
   });
@@ -116,7 +116,7 @@ describe("DisplayItem", () => {
     );
 
     expect(mockGenerateUniqueId).toHaveBeenCalled();
-    expect(UtilsModule.generateUniqueId).toHaveBeenCalledTimes(16);
+    expect(UtilsModule.generateUniqueId).toHaveBeenCalledTimes(17);
 
     vi.restoreAllMocks();
   });

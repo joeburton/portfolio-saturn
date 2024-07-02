@@ -17,12 +17,10 @@ function Work() {
 
   let numberColumns: number = 0;
 
-  if (breakpoint >= 960) {
-    numberColumns = 2;
-  }
-
   if (breakpoint >= 1200) {
     numberColumns = 3;
+  } else if (breakpoint >= 960) {
+    numberColumns = 2;
   }
 
   return (

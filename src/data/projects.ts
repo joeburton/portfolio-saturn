@@ -28,7 +28,7 @@ export const projects = [
     description:
       "<p>I worked for World First as a contract Front-end Engineer for the first 6 months. After becoming permanent as a Senior Software Engineer, I was finally promoted to Front-end Team Lead. I initially worked on the trading platform, integrating Xero accountancy software. Following this, I joined the statements team, where I implemented new UI features and components, improved the platform's micro front-end codebases by moving from React Classes to React Hooks, increased test coverage, and enhanced general code quality.</p><p>After being promoted to Front-end Team Lead, I was responsible for managing the team's goals, deliverables, and conducting individuals’ performance reviews. During my time as Front-end Lead, my team and I were heavily involved in helping deliver a new multi-region front-end for the trading platform. We used react-i18next for translations and developed region-specific logic to cater for varying rules, regulations, and rates. On a day-to-day basis, we worked closely with back-end teams, Product, UX, and Design across the UK and APAC to ensure everything ran as smoothly as possible.</p>",
     skills:
-      "React, TypeScript, HTML, CSS, JavaScript, Jest, React Testing Library, react-i18next, Ant Design, LESS, Webpack, Storybook, Rollup, Node.js, Express",
+      "React, TypeScript, JavaScript, Jest, React Testing Library, HTML, CSS, node/msw, react-i18next, Ant Design, LESS, Webpack, Storybook, Rollup, Node.js, Express",
     className: "worldfirst-logo",
     links: [
       {
