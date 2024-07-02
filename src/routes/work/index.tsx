@@ -13,7 +13,8 @@ import styles from "./work.module.css";
 import { breakpoints } from "../../theme";
 
 function Work() {
-  const breakpoint = useBreakpointValue(breakpoints) || 0;
+  const breakpoint: number = useBreakpointValue(breakpoints) || 0;
+
   let numberColumns: number = 0;
 
   if (breakpoint >= 960) {
