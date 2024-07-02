@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, useBreakpointValue } from "@chakra-ui/react";
 
 import { DisplayItem } from "../../components/DisplayItem";
 import { LogoSize } from "../../components/DisplayItem";
@@ -10,7 +10,23 @@ import { projects } from "../../data/projects"; // temp data, will fetch from ap
 
 import styles from "./work.module.css";
 
+import { breakpoints } from "../../theme";
+
 function Work() {
+  const breakpoint = useBreakpointValue(breakpoints) || 0;
+  console.log(breakpoint);
+  let numberColumns: number = 0;
+
+  if (breakpoint >= 960) {
+    console.log("tada: 960", breakpoint);
+    numberColumns = 2;
+  }
+
+  if (breakpoint >= 1200) {
+    console.log("tada: 1200", breakpoint);
+    numberColumns = 3;
+  }
+
   return (
     <>
       <PageIntro
@@ -37,7 +53,7 @@ function Work() {
       <div className={styles.work}>
         <Flex flexWrap='wrap' maxWidth='1200px' margin='0 auto'>
           {projects.map((project, i) => {
-            const rowEnd = (i + 1) % 3 === 0 ? true : false; // every third item.
+            const rowEnd = (i + 1) % numberColumns === 0 ? true : false; // every third item.
             return (
               <DisplayItem
                 logo={project.logo}
@@ -50,6 +66,7 @@ function Work() {
                 links={project.links}
                 rowEnd={rowEnd}
                 key={generateUniqueId()}
+                numberColumns={numberColumns}
               />
             );
           })}

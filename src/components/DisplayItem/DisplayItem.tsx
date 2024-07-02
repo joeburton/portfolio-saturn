@@ -34,6 +34,7 @@ export type DisplayItemInterface = {
   skills: string;
   className?: string;
   links?: Links[];
+  numberColumns: number;
 };
 
 interface SkillsInterface {
@@ -60,14 +61,18 @@ export const DisplayItem = ({
   skills,
   className,
   links,
+  numberColumns,
 }: DisplayItemInterface) => {
   const [open, setOpen] = useState(false);
 
   const constrainContent = description.length > 300 ? true : false;
 
   const skillSet: string[] = skills.split(",");
+
+  console.log(numberColumns);
+
   return (
-    <Box width={{ base: "100%", lg: "33.3%" }}>
+    <Box width={{ base: "100%", lg: "50%", xl: "33.3%" }}>
       <Card
         variant='elevated'
         mr={rowEnd ? 0 : [0, 0, 0, 5]}
@@ -77,7 +82,7 @@ export const DisplayItem = ({
       >
         <CardBody
           className={styles.cardBody}
-          minHeight={{ base: "auto", lg: "600px", xl: "550px" }}
+          minHeight={{ base: "auto", lg: "520px", xl: "550px" }}
         >
           <Image
             src={getImageUrl("/assets/logos/", logo)}
