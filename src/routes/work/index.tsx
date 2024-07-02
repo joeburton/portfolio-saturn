@@ -14,16 +14,13 @@ import { breakpoints } from "../../theme";
 
 function Work() {
   const breakpoint = useBreakpointValue(breakpoints) || 0;
-  console.log(breakpoint);
   let numberColumns: number = 0;
 
   if (breakpoint >= 960) {
-    console.log("tada: 960", breakpoint);
     numberColumns = 2;
   }
 
   if (breakpoint >= 1200) {
-    console.log("tada: 1200", breakpoint);
     numberColumns = 3;
   }
 
@@ -66,7 +63,6 @@ function Work() {
                 links={project.links}
                 rowEnd={rowEnd}
                 key={generateUniqueId()}
-                numberColumns={numberColumns}
               />
             );
           })}

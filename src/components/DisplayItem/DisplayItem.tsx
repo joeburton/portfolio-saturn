@@ -34,7 +34,6 @@ export type DisplayItemInterface = {
   skills: string;
   className?: string;
   links?: Links[];
-  numberColumns: number;
 };
 
 interface SkillsInterface {
@@ -61,15 +60,12 @@ export const DisplayItem = ({
   skills,
   className,
   links,
-  numberColumns,
 }: DisplayItemInterface) => {
   const [open, setOpen] = useState(false);
 
   const constrainContent = description.length > 300 ? true : false;
 
   const skillSet: string[] = skills.split(",");
-
-  console.log(numberColumns);
 
   return (
     <Box width={{ base: "100%", lg: "50%", xl: "33.3%" }}>
