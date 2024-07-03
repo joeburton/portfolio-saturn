@@ -23,7 +23,7 @@ export const projects = [
   {
     logo: "worldfirst.png",
     logoSize: "small",
-    role: "Senior Software Engineer",
+    role: "Senior Software Engineer/ Team Lead",
     company: "WorldFirst",
     description:
       "<p>I worked for World First as a contract Front-end Engineer for the first 6 months. After becoming permanent as a Senior Software Engineer, I was finally promoted to Front-end Team Lead. I initially worked on the trading platform, integrating Xero accountancy software. Following this, I joined the statements team, where I implemented new UI features and components, improved the platform's micro front-end codebases by moving from React Classes to React Hooks, increased test coverage, and enhanced general code quality.</p><p>After being promoted to Front-end Team Lead, I was responsible for managing the team's goals, deliverables, and conducting individuals’ performance reviews. During my time as Front-end Lead, my team and I were heavily involved in helping deliver a new multi-region front-end for the trading platform. We used react-i18next for translations and developed region-specific logic to cater for varying rules, regulations, and rates. On a day-to-day basis, we worked closely with back-end teams, Product, UX, and Design across the UK and APAC to ensure everything ran as smoothly as possible.</p>",
@@ -45,7 +45,7 @@ export const projects = [
     description:
       "<p>Whilst with GE I worked on a SPA (Single Page Application) building a tool to help the telecoms industry to locate, route and cost new fibre connections. We used Web Components with Polymer to build UI Components, SASS for the CSS, and Node.js with Express for the back-end. We used Mocha and Chai to write our tests on the front-end and Gulp for the build step.</p><p>I also introduced the team at GE to the use of React and Redux with Jest and Enzyme for testing. Using React I built a SPA tool to demonstrate the use of API’s developed for the telecoms routing application. This project was also used as a way for the team to learn React, Redux, Jest and Webpack. I held several one-to-one sessions with other developers explaining how to structure a React and Redux application and demonstrate component development and best practices. We worked in an agile manner with fortnightly sprint cycles.</p>",
     skills:
-      "React, Redux, JavaScript, Jest, Enzyme, Webpack, SASS, Web Components, Polymer, HTML, CSS, Gulp",
+      "React, JavaScript, Redux, Jest, Enzyme, Webpack, Web Components, Polymer, HTML, SASS, LESS, CSS, Gulp",
     className: "ge-logo",
     links: [
       {
@@ -62,7 +62,7 @@ export const projects = [
     description:
       "<p>Whilst I was with Cash Flows I worked on a Visa prepaid-wallet. We built the front-end in React with SASS for our CSS and Webpack to manage the front-end build. When I started with Cash Flows some early development had already taken place on the product but the application wasn’t fully responsive and had limited browser and device support. I introduced a mobile first responsive approach to the application, as well as cross-browser and device support. I also introduced a test framework using Jest and Enzyme, added linting for the SASS and JavaScript, refactored and optimised the code and introduced new features. We worked in an agile manner with three-week sprint cycles, sizing sessions, breakdown sessions and retrospectives.</p>",
     skills:
-      "React, JavaScript, Jest, Enzyme, Webpack, Bootstrap, Material UI, HTML, CSS, SASS",
+      "React, JavaScript, Jest, Enzyme, Webpack, Bootstrap, Material UI, HTML, CSS, SASS, LESS, Gulp",
     className: "cashflows-logo",
     links: [{ visual: "www.cashflows.com", url: "https://www.cashflows.com/" }],
   },
@@ -88,7 +88,7 @@ export const projects = [
     description:
       "<p>Whilst working for Cambridge Assessment I worked across multiple projects. I built responsive SPA’s, data capture projects, and contributed to an Open Source project creating reusable Web Components in ES6; you can view the source code here https://github.com/cambridgeweblab/common-ui.</p><p>All projects involved creating UI elements in HTML5, CSS3 and JavaScript written in either ES5 or ES6. We introduced SystemJS to projects to manage modules, developed custom Web Components and used Node.js with the express framework for routing and connecting to API’s.</p> <p>Result Enquiries Project – (ES5 Web Component that generates schema driven HTML forms.) http://forms.admissionstestingservice.org/form/tmua-candidate/</p>",
     skills:
-      "JavaScript, SystemJS, Jasime, Karma, Unit Testing, HTML, CSS, Web Components",
+      "JavaScript, SystemJS, Jasime, Karma, Unit Testing, HTML, CSS, Web Components, Polymer, Gulp, Webpack",
     className: "cambridge-assessment-logo",
     links: [
       {
@@ -129,7 +129,7 @@ export const projects = [
     company: "Freelance",
     description:
       "<p>Senior Front-end Developer – A good example of work I did whilst with Millimetre Media is the Helix website. I was the sole Front-end Developer on this project. I used a Mobile First Responsive approach, using HTML5, CSS3 JavaScript/ jQuery and Browserify to manage my modules with Gulp to manage the front-end workflow http://helixproperty.co.uk.</>",
-    skills: "JavaScript, jQuery, Browserify, HTML5, CSS3, Gulp",
+    skills: "JavaScript, jQuery, Browserify, PHP, HTML5, CSS3, Gulp",
     className: "helix-logo",
     links: [
       { visual: "www.helixproperty.co.uk", url: "http://helixproperty.co.uk" },

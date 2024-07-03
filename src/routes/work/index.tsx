@@ -12,7 +12,7 @@ import styles from "./work.module.css";
 
 import { breakpoints } from "../../theme";
 
-function Work() {
+const Projects = () => {
   const breakpoint: number = useBreakpointValue(breakpoints) || 0;
 
   let numberColumns: number = 0;
@@ -23,6 +23,26 @@ function Work() {
     numberColumns = 2;
   }
 
+  return projects.map((project, i) => {
+    const rowEnd = (i + 1) % numberColumns === 0 ? true : false; // every third item.
+    return (
+      <DisplayItem
+        logo={project.logo}
+        logoSize={project.logoSize as LogoSize}
+        role={project.role}
+        company={project.company}
+        description={project.description}
+        skills={project.skills}
+        className={project.className}
+        links={project.links}
+        rowEnd={rowEnd}
+        key={generateUniqueId()}
+      />
+    );
+  });
+};
+
+function Work() {
   return (
     <>
       <PageIntro
@@ -48,23 +68,7 @@ function Work() {
       />
       <div className={styles.work}>
         <Flex flexWrap='wrap' maxWidth='1200px' margin='0 auto'>
-          {projects.map((project, i) => {
-            const rowEnd = (i + 1) % numberColumns === 0 ? true : false; // every third item.
-            return (
-              <DisplayItem
-                logo={project.logo}
-                logoSize={project.logoSize as LogoSize}
-                role={project.role}
-                company={project.company}
-                description={project.description}
-                skills={project.skills}
-                className={project.className}
-                links={project.links}
-                rowEnd={rowEnd}
-                key={generateUniqueId()}
-              />
-            );
-          })}
+          <Projects />
         </Flex>
       </div>
     </>
