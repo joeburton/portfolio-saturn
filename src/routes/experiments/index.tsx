@@ -9,7 +9,6 @@ import {
   Image,
   Icon,
   Link,
-  Show,
 } from "@chakra-ui/react";
 import { ErrorBoundary } from "react-error-boundary";
 
@@ -59,7 +58,7 @@ function Experiments() {
             <CardBody>
               <SimpleGrid columns={[1, 1, 1, 2]} spacing={5}>
                 <Box>
-                  <Show above='lg'>
+                  <Box display={{ base: "none", lg: "block" }}>
                     <Image
                       src={getImageUrl(
                         "/assets/",
@@ -67,7 +66,7 @@ function Experiments() {
                       )}
                       alt='Ginger Software Engineer'
                     />
-                  </Show>
+                  </Box>
                   <SimpleGrid
                     columns={[3]}
                     spacing='10px'
