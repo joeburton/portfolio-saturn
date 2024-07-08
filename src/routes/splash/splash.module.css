@@ -17,3 +17,15 @@
   align-items: center;
   word-break: break-all;
 }
+
+.experience li {
+  margin: 6px 0;
+}
+
+.experience li a {
+  text-decoration: underline;
+}
+
+.experience li a:hover {
+  background-color: #edf2f7;
+}

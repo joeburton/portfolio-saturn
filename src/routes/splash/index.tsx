@@ -11,10 +11,11 @@ import {
   Flex,
   List,
   ListIcon,
-  ListItem,
   Link,
   Divider,
   Show,
+  UnorderedList,
+  ListItem,
 } from "@chakra-ui/react";
 
 import { PageIntro } from "../../components/PageIntro";
@@ -39,7 +40,74 @@ function Splash() {
         <Box maxWidth={"768px"} m='0 auto'>
           <Card variant='elevated'>
             <CardBody>
-              <Text mb='10px' fontSize='md'>
+              <UnorderedList className={styles.experience}>
+                <ListItem>
+                  With over 20 years of industry experience working as a Web
+                  Developer.
+                </ListItem>
+                <ListItem>
+                  For the past 15+ years I've specialised in front-end
+                  development.
+                </ListItem>
+                <ListItem>
+                  I've worked for a broad range of companies, including:
+                  <UnorderedList styleType="'- '">
+                    <ListItem>
+                      <ChakraLink
+                        href='https://www.ogilvy.com/uk/about'
+                        isExternal
+                        textDecoration='underline'
+                      >
+                        Ogilvy & Mather
+                      </ChakraLink>
+                      ,{" "}
+                      <ChakraLink
+                        href='https://www.tribalworldwide.co.uk/'
+                        isExternal
+                        textDecoration='underline'
+                      >
+                        Tribal Worldwide
+                      </ChakraLink>
+                      ,{" "}
+                      <ChakraLink
+                        href='https://www.lastminute.com/'
+                        isExternal
+                        textDecoration='underline'
+                      >
+                        lastminute.com
+                      </ChakraLink>
+                      ,{" "}
+                      <ChakraLink
+                        href='https://www.ge.com/'
+                        isExternal
+                        textDecoration='underline'
+                      >
+                        General Electric
+                      </ChakraLink>{" "}
+                      &{" "}
+                      <ChakraLink
+                        href='https://www.worldfirst.com'
+                        isExternal
+                        textDecoration='underline'
+                      >
+                        World First
+                      </ChakraLink>
+                    </ListItem>
+                  </UnorderedList>
+                </ListItem>
+                <ListItem>
+                  Currently I work for{" "}
+                  <ChakraLink
+                    href='https://www.publicissapient.com/'
+                    isExternal
+                    textDecoration='underline'
+                  >
+                    Publicis Sapient
+                  </ChakraLink>{" "}
+                  as a Front-end Lead/Manager.
+                </ListItem>
+              </UnorderedList>
+              {/* <Text mb='10px' fontSize='md'>
                 I have over 20 years of industry experience working as a Web
                 Developer, with much of the last 15 years focused on front-end
                 development. During this time, I've gained experience working
@@ -77,7 +145,7 @@ function Splash() {
                   Publicis Sapient
                 </ChakraLink>{" "}
                 as a hands-on Front-end Lead/ Manager.
-              </Text>
+              </Text> */}
             </CardBody>
           </Card>
           <Card variant='elevated' mt='20px'>
