@@ -120,19 +120,6 @@ export const SplashContent = () => {
                 <li>
                   <Card variant='filled' p='1'>
                     <Link
-                      href='https://vercel.com/joe-burtons-projects'
-                      isExternal
-                    >
-                      <Text>
-                        <Icon as={Vercel} width='20px' height='20px' mr='4px' />
-                        vercel.com/joe-burtons-projects
-                      </Text>
-                    </Link>
-                  </Card>
-                </li>
-                <li>
-                  <Card variant='filled' p='1'>
-                    <Link
                       href='https://www.linkedin.com/in/joejamesburton'
                       isExternal
                     >
@@ -174,33 +161,31 @@ export const SplashContent = () => {
                     <Link href='tel:+447768989321'>+ 44 (0) 7768989321</Link>
                   </ListItem>
                 </List>
-
-                <Flex alignItems='flex-end' mt='20px'>
-                  <ChakraLink
-                    as={ReactRouterLink}
-                    colorScheme='teal'
-                    variant='outline'
-                    to='work'
-                    mr='10px'
-                    alignItems='center'
-                    display='inline-flex'
-                  >
-                    View my work
-                    <Icon as={ArrowForwardIcon} m='0 0 0 4px' />
-                  </ChakraLink>
-                  <ChakraLink
-                    as={ReactRouterLink}
-                    colorScheme='teal'
-                    variant='outline'
-                    to='contact'
-                    alignItems='center'
-                    display='inline-flex'
-                  >
-                    Contact me
-                    <Icon as={ArrowForwardIcon} m='0 0 0 4px' />
-                  </ChakraLink>
-                </Flex>
               </SimpleGrid>
+
+              {/* <ChakraLink
+                as={ReactRouterLink}
+                colorScheme='teal'
+                variant='outline'
+                to='work'
+                mr='10px'
+                alignItems='center'
+                display='inline-flex'
+              >
+                View my work
+                <Icon as={ArrowForwardIcon} m='0 0 0 4px' />
+              </ChakraLink>
+              <ChakraLink
+                as={ReactRouterLink}
+                colorScheme='teal'
+                variant='outline'
+                to='contact'
+                alignItems='center'
+                display='inline-flex'
+              >
+                Contact me
+                <Icon as={ArrowForwardIcon} m='0 0 0 4px' />
+              </ChakraLink> */}
             </SimpleGrid>
           </CardBody>
         </Card>
