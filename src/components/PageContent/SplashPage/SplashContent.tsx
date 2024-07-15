@@ -188,7 +188,7 @@ export const SplashContent = () => {
                 </li>
                 <li>
                   <Card variant='filled' p='1'>
-                    <Link href='/work'>
+                    <Link href='/contact'>
                       <Text>
                         <Icon
                           as={ArrowForwardIcon}
