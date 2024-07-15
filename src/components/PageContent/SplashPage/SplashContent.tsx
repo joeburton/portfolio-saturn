@@ -1,18 +1,12 @@
-import { Link as ReactRouterLink } from "react-router-dom";
-
 import {
   Box,
   Card,
   CardBody,
   Link as ChakraLink,
   Divider,
-  Flex,
   Icon,
   Link,
-  List,
-  ListIcon,
   ListItem,
-  Show,
   SimpleGrid,
   Text,
   UnorderedList,
@@ -20,7 +14,7 @@ import {
 
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { HiMiniAtSymbol, HiMiniDevicePhoneMobile } from "react-icons/hi2";
-import { GitHubMark, LinkedIn, Vercel } from "../../CustomIcons";
+import { GitHubMark, LinkedIn } from "../../CustomIcons";
 import styles from "./splash.module.css";
 
 export const SplashContent = () => {
@@ -135,57 +129,79 @@ export const SplashContent = () => {
                     </Link>
                   </Card>
                 </li>
-              </ul>
-              <SimpleGrid columns={1}>
-                <Show below='md'>
-                  <Divider
-                    orientation='horizontal'
-                    m='10px 0 15px 0'
-                    color='silver'
-                    sx={{
-                      "@media screen and (min-width: 768px)": {
-                        display: "none",
-                      },
-                    }}
-                  />
-                </Show>
-                <List spacing={3} mb='10px'>
-                  <ListItem>
-                    <ListIcon as={HiMiniAtSymbol} />
-                    <Link href='mailto:joeburton@gmail.com'>
-                      joeburton@gmail.com
+                <li>
+                  <Card variant='filled' p='1'>
+                    <Link href='/work'>
+                      <Text>
+                        <Icon
+                          as={ArrowForwardIcon}
+                          width='20px'
+                          height='20px'
+                          mr='4px'
+                        />
+                        View my work
+                      </Text>
                     </Link>
-                  </ListItem>
-                  <ListItem>
-                    <ListIcon as={HiMiniDevicePhoneMobile} />
-                    <Link href='tel:+447768989321'>+ 44 (0) 7768989321</Link>
-                  </ListItem>
-                </List>
-              </SimpleGrid>
-
-              {/* <ChakraLink
-                as={ReactRouterLink}
-                colorScheme='teal'
-                variant='outline'
-                to='work'
-                mr='10px'
-                alignItems='center'
-                display='inline-flex'
-              >
-                View my work
-                <Icon as={ArrowForwardIcon} m='0 0 0 4px' />
-              </ChakraLink>
-              <ChakraLink
-                as={ReactRouterLink}
-                colorScheme='teal'
-                variant='outline'
-                to='contact'
-                alignItems='center'
-                display='inline-flex'
-              >
-                Contact me
-                <Icon as={ArrowForwardIcon} m='0 0 0 4px' />
-              </ChakraLink> */}
+                  </Card>
+                </li>
+              </ul>
+              <Divider
+                orientation='horizontal'
+                m='2px 0 2px 0'
+                color='silver'
+                sx={{
+                  "@media screen and (min-width: 768px)": {
+                    display: "none",
+                  },
+                }}
+              />
+              <ul className={styles.customList}>
+                <li>
+                  <Card variant='filled' p='1'>
+                    <Link href='mailto:joeburton@gmail.com' isExternal>
+                      <Text>
+                        <Icon
+                          as={HiMiniAtSymbol}
+                          width='20px'
+                          height='20px'
+                          mr='4px'
+                        />
+                        joeburton@gmail.com
+                      </Text>
+                    </Link>
+                  </Card>
+                </li>
+                <li>
+                  <Card variant='filled' p='1'>
+                    <Link href='tel:+447768989321' isExternal>
+                      <Text>
+                        <Icon
+                          as={HiMiniDevicePhoneMobile}
+                          width='20px'
+                          height='20px'
+                          mr='4px'
+                        />
+                        + 44 (0) 7768989321
+                      </Text>
+                    </Link>
+                  </Card>
+                </li>
+                <li>
+                  <Card variant='filled' p='1'>
+                    <Link href='/work'>
+                      <Text>
+                        <Icon
+                          as={ArrowForwardIcon}
+                          width='20px'
+                          height='20px'
+                          mr='4px'
+                        />
+                        Contact me
+                      </Text>
+                    </Link>
+                  </Card>
+                </li>
+              </ul>
             </SimpleGrid>
           </CardBody>
         </Card>
